@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-   
+
 }
 
-::selection{
-    background-color:#7abcd8 ;
+::selection {
+    background-color: #7abcd8;
     color: white;
 }
 
@@ -40,6 +40,7 @@
     display: block;
     border-style: none;
     justify-content: center;
+    margin-top: 10px;
 
 }
 
@@ -82,12 +83,13 @@ figcaption {
 }
 
 
-#listamenu{
+#listamenu {
     display: flex;
     justify-content: space-around;
     text-align: center;
 
-    }
+}
+
 /* Formato a las li del menu princial les da formato relativo y las convierte en bloque inline*/
 #listamenu>li {
     position: relative;
@@ -131,115 +133,117 @@ figcaption {
     text-decoration: none;
 }
 
-/*formato para el contenerdor padre de la seccion principal - formato de flex centrado y un background de fondo*/
-#mainindex {
+.contenedorpagos {
+    display: grid;
+    width: 94%;
+    padding: 1%;
+    grid-template-areas: "f f f"
+                         "s a t"
+                         "s a t"
+                         ". a t";
+grid-template-columns: repeat(3, 1fr);  
+grid-template-rows: 60px repeat(3, 1fr);                       
+    border: 1px solid black;
+    row-gap: 2%;
+    column-gap: 1%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+}
+
+.secciontitulo {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    grid-area: f;
     display: flex;
     justify-content: center;
-    width: 96%;
-    padding: 2%;
-    background-image: url("../img/marble_white.jpg");
+    align-items: center;
+    font-family: 'Martin';
+    text-decoration: underline;
 }
 
-/*formato del contenedor hijo donde de pondran las secciones de la pagina principal*/
-#mainindex div {
-    display: flex;
-    flex: 1;
-    max-width: 960px;
-}
 
-/*formato del contenedor nieto ja donde se pondran los articulos*/
-#articulosprincipales {
-    flex: 1;
-    margin-right: 0px;
-    background-color: #FFFFFF;
+
+.seccion1 {
+    background-color: white;
+    border: 1px black solid;
     border-radius: 10px;
+    grid-area: s;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 5%;
+    justify-content: center;
+    
 }
 
-.articulomain {
-    position: relative;
-    padding: 0px 40px 20px 40px;
-}
-
-/*Formato del h1 dentro de los articulos*/
-.articulomain h1 {
-    margin-bottom: 5px;
-    font: bold 30px arial;
-    text-align: center;
-}
-
-/*Formato del p dentro de los articulos*/
-.articulomain p {
-    font: 18px Georgia, sans-serif;
-    text-align: justify;
-}
-
-.articulomain ul {
-    position: relative;
-    display: inline-block;
-    list-style: none;
-    width: 90%;
-    padding: 2% 5%;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    text-align: left;
-}
-
-.articulomain>ul>li {
-    font-family: Arial, Helvetica, sans-serif;
+.tituloseccion>h1{
+    display: flex;
+    height: 40px;
+    font-family: 'Martin';
     font-size: 1.25em;
-    padding-left: 25px;
+    text-decoration: underline;
+ 
+       
 }
 
-.articulomain>ul>img {
-    display: inline-table;
-    position: absolute;
+.seccion1>div>h3{
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+    justify-content: center;
+    font-family: 'Martin';
+    text-decoration: underline;
+
 }
 
-
-/*formato para la seccion figure donde estan las imagenes*/
-figure {
-    margin: 10px 0px;
+.seccion1>div>p{
+    display: flex;
+    text-align: justify;
+    font-family: 'Martin';
+   
 }
 
-/*formato de las imagenes*/
-#articulosprincipales figure img {
-    max-width: 98%;
-    display: block;
-    padding: 1%;
-    border: 1px solid black;
-    margin: auto;
-}
+.seccion2 {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    grid-area: a;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 5%;
+    justify-content: center;
+   }
+
+.seccion3 {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    grid-area: t;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 5%;
+    justify-content: center;
+   }
+
+
+
 
 #reproductor {
     display: flex;
     justify-content: center;
 }
 
-
-/*#contenedorfooter ul {
-    position: relative;
-    display: inline-block;
-    list-style: none;
-    height: 90px;
-    width: 94%;
-    padding-left: 1%;
-    columns: 4;
-    -webkit-columns: 4;
-    -moz-columns: 4;
-    text-align: left;
-    font-family: Martin;
-    font-size: 14px;
-}*/
-
-#footer{
+#footer {
     width: 100%;
     background-image: url(../img/marble_white.jpg);
     padding-bottom: 5px;
-    
-    }
 
-#articulofooter{
+}
+
+#articulofooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -306,22 +310,26 @@ figure {
 
 }
 
-.itemfooter2 p,a {
+.itemfooter2 p,
+a {
     font-family: 'Martin';
     font-size: 14px;
 }
 
-.itemfooter1 p,a {
+.itemfooter1 p,
+a {
     font-family: 'Martin';
     font-size: 14px;
 }
 
-.itemfooter3 p,a {
+.itemfooter3 p,
+a {
     font-family: 'Martin';
     font-size: 14px;
 }
 
-.itemfooter4 p,a {
+.itemfooter4 p,
+a {
     font-family: 'Martin';
     font-size: 14px;
 }
@@ -339,65 +347,13 @@ footer div a:visited {
     color: blue;
 }
 
-.mainmapa {
-    display: block;
-    position: relative;
-    width: 82%;
-    background-image: url("../img/marble_white.jpg");
-    padding-top: 2%;
-    padding-left: 16%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-    justify-content: center;
+
+@media screen and (max-width: 640px) {
+    .container {
+        grid-template-areas: "f f f" 
+                             "s s s" 
+                             "a a a"
+                             "t t t";
+    }
 }
 
-.mainmapa div {
-    border: 2px red solid;
-    display: inline-block;
-
-    width: 80%;
-    padding: 1%;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-
-}
-
-
-.titulomapa>p {
-    text-align: center;
-    font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/*.mapa{
-    width: 96%;
-    padding: 10px 2%;
-    display: inline-block;
-    position: relative;
-    }*/
-
-.descripcionmapa {
-    width: 96%;
-    padding: 10px 2%;
-    display: inline-block;
-    position: relative;
-}
-
-.descripcionmapa>p {
-    text-align: justify;
-    font-size: 1em;
-    font-family: Martin2;
-
-}
-
-
-
-/* Prueba transform
-.divpagos>p:hover{
-    transform: rotate(45deg);
-} */
-
-/*Prueba de un before con una imagen*/
-/*li::before{
-    content:url(../img/Flechaarriba2.png);
-}*/

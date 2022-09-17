@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+::selection {
+    background-color: #7abcd8;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Martin';
+    src: url(../fonts/swissc.ttf);
+}
+
+@font-face {
+    font-family: 'Martin2';
+    src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+
+#contenedorheader {
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    /*background-color: cadetblue;*/
+    background-image: url(../img/hand-painted-watercolor-background-with-sky-and-clouds-shape.jpg);
+    width: 96%;
+    padding: 0% 2%;
+}
+
+#contenedorheader div {
+    flex: 1;
+    padding-top: 0;
+    width: 96%;
+    margin: 0 auto;
+}
+
+#contenedorheader div img {
+    margin: auto;
+    display: block;
+    border-style: none;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+figcaption {
+    height: 30px;
+    text-align: center;
+    font: bold;
+    font-size: 24px;
+    font-family: Martin2;
+
+}
+
+#menuprincipal {
+    display: flex;
+    /*justify-content: center;*/
+    width: 96%;
+    /*height: 50px;*/
+    padding: 0% 2%;
+    background-color: #9FC8D9;
+    border-top: 1px solid #094660;
+    border-bottom: 1px solid #094660;
+}
+
+/* formato flex al contenedor hijo del nav*/
+#menuprincipal>div {
+    flex: 1;
+
+}
+
+/* aplicamos la pseudo hover cuando se pasa por encima del menu y cambia el color*/
+#menuprincipal li:hover {
+    background-color: #6FACC6;
+}
+
+/*formato para los <a> del menu*/
+#menuprincipal a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+
+#listamenu{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    }
+
+
+/* Formato a las li del menu princial les da formato relativo y las convierte en bloque inline*/
+#listamenu>li {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+
+/*"Esconde" el menu desplegable*/
+#listamenu li>ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background-color: #9FC8D9;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 0px 0px 5px 5px;
+    list-style: none;
+    z-index: 1000;
+}
+
+/*estable las medidas del la lista del segundo ul anidado*/
+#listamenu li>ul>li {
+    width: 250px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+/* el hover cuando pasas el mouse cambia la opcion de display y hace visible el menu desplegable*/
+#listamenu li:hover ul {
+    display: block;
+}
+
+/* formato a las <a> de las lista desordenadas*/
+#listamenu a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+
+#contenedortarifas {
+    display: flex;
+    width: 96%;
+    padding: 2% 2%;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(../img/marble_white.jpg);
+}
+
+#cajaimagen {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    padding: 1%;
+    border: 1px black solid;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+#contenedorarticulo {
+    display: flex;
+    width: 100%;
+    height: 15%;
+   
+}
+
+#dibujodescripciontarifas {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 3%;
+    margin-left: 2%;
+    padding: 1%;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+#descripciontarifas {
+    display: flex;
+    width: 80%;
+    height: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 0%;
+    padding: 1% 1%;
+    background-color: white;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px black solid;
+
+}
+
+#descripciontarifas>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+#contenedortarifasflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 96%;
+    padding: 0% 2%;
+    background-color:white;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+#titulotarifasflex {
+    display: flex;
+    width: 94%;
+    padding: 2% 2%;
+    background-color:white;
+    justify-content: center;
+}
+
+#titulotarifasflex>p {
+    font-family: 'Martin';
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#tarifaflex1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 16%;
+    margin: 0% 2% 1% 2%;
+    padding: 1%;
+    background-color:linen;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: gray 5px 5px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tarifaflex2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 16%;
+    margin: 0% 2% 1% 2%;
+    padding: 1%;
+    background-color:linen;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: gray 5px 5px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tarifaflex3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 16%;
+    margin: 0% 2% 1% 2%;
+    padding: 1%;
+    background-color:linen;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: gray 5px 5px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tarifaflex4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 16%;
+    margin: 0% 2% 1% 2%;
+    padding: 1%;
+    background-color:linen;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: gray 5px 5px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#contenedordescripciontarifaflex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 96%;
+    background-color:white ;
+    align-content: center;
+   
+
+}
+
+#descripciontarifaflex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    padding: 1%;
+    margin: 1%;
+    background-color: white;
+    border: 1px cadetblue;
+    border-style: dotted;
+    }
+
+#descripciontarifaflex p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.tituloincluye{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+.tituloincluye h1::before{
+content: "\027a0";
+}
+
+.incluye{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 96%;
+    margin: 1% 1% 2%;
+    }
+
+
+.incluyetarifaflex {
+    display: flex;
+    width: 15%;
+    margin: 1%;
+    padding: 0.75%;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5%;
+    border:1px dashed;
+    border-color:#6FACC6;
+    }
+
+.incluyetarifaflex p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+   }
+
+.incluyetarifaflex h3{
+    font-family: 'Martin2';
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.incluyetarifaflex h3::before{
+    content:"\02713"" ";
+}
+
+#contenedortarifasfija {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 96%;
+    padding: 0% 2%;
+    background-color: white;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: 1px black solid
+}
+
+#titulotarifasfija {
+    display: flex;
+    width: 94%;
+    padding: 2% 2%;
+    background-color: white;
+    justify-content: center;
+}
+
+#titulotarifasfija>p {
+    font-family: 'Martin';
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#tarifafija1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 16%;
+    margin: 0% 2% 1% 2%;
+    padding: 1%;
+    background-color:linen;
+    align-items: center;
+    border-radius: 5%;
+    /*border-style:outset ;*/
+    box-shadow: gray 5px 5px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tarifafija2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 16%;
+    margin: 0% 2% 1% 2%;
+    padding: 1%;
+    background-color:linen;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: gray 5px 5px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tarifafija3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 16%;
+    margin: 0% 2% 1% 2%;
+    padding: 1%;
+    background-color:linen;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: gray 5px 5px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tarifafija4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 16%;
+    margin: 0% 2% 1% 2%;
+    padding: 1%;
+    background-color:linen;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: gray 5px 5px 2px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#contenedordescripciontarifafija {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 96%;
+    background-color: white;
+    align-content: center;
+    
+
+}
+
+#descripciontarifafija {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    padding: 1%;
+    margin: 1%;
+    background-color: white;
+    border: 1px;
+    border-color: orangered;
+    border-style: dotted;
+}
+
+#descripciontarifafija p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.incluyetarifafija {
+    display: flex;
+    width: 15%;
+    margin: 1%;
+    padding: 0.75%;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5%;
+    border:1px dashed;
+    border-color:#6FACC6;
+}
+
+.incluyetarifafija p{
+    font-family: 'Martin';
+    font-size: 0.75em;
+    
+}
+
+.incluyetarifafija h3{
+    font-family: 'Martin2';
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.incluyetarifafija h3::before{
+    content:"\02713"" ";
+}
+
+#footer{
+width: 100%;
+background-image: url(../img/marble_white.jpg);
+padding-bottom: 5px;
+
+}
+
+#articulofooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 96%;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    padding-top: 1%;
+    border: 1px black solid;
+
+}
+
+.itemfooter1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 19%;
+    margin: 0% 1% 1% 1%;
+    padding: 1%;
+    background-color: white;
+    text-align: center;
+    /*border: 2px rgb(63, 98, 196) dashed;*/
+
+}
+
+.itemfooter2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 18%;
+    margin: 0% 1% 1% 1%;
+    padding: 1%;
+    background-color: white;
+    text-align: center;
+    /*border: 2px rgb(63, 98, 196) dashed;*/
+
+}
+
+.itemfooter3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 16%;
+    margin: 0% 1% 1% 1%;
+    padding: 1%;
+    background-color: white;
+    text-align: center;
+    /*border: 2px rgb(63, 98, 196) dashed;*/
+
+}
+
+.itemfooter4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 16%;
+    margin: 0% 1% 1% 1%;
+    padding: 1%;
+    background-color: white;
+    text-align: center;
+    /*border: 2px rgb(63, 98, 196) dashed;*/
+
+}
+
+.itemfooter2 p,a {
+    font-family: 'Martin';
+    font-size: 14px;
+}
+
+.itemfooter1 p,a {
+    font-family: 'Martin';
+    font-size: 14px;
+}
+
+.itemfooter3 p,a {
+    font-family: 'Martin';
+    font-size: 14px;
+}
+
+.itemfooter4 p,a {
+    font-family: 'Martin';
+    font-size: 14px;
+}
+
+
+footer div a:link {
+    color: blue;
+}
+
+footer div a:hover {
+    background-color: lightblue;
+}
+
+footer div a:visited {
+    color: blue;
+}
