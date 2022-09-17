@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Martin';
+    src: url(../fonts/swissc.ttf);
+}
+
+@font-face {
+    font-family: 'Martin2';
+    src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+
+#contenedorheader {
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    background-color: cadetblue;
+    width: 96%;
+    padding: 0% 2%;
+}
+
+#contenedorheader div {
+    flex: 1;
+    padding-top: 0;
+    width: 96%;
+    margin: 0 auto;
+}
+
+#contenedorheader div img {
+    margin: auto;
+    display: block;
+    border-style: none;
+    justify-content: center;
+
+}
+
+figcaption {
+    height: 30px;
+    text-align: center;
+    font: bold;
+    font-size: 24px;
+    font-family: Martin2;
+
+}
+
+#menuprincipal {
+    /*position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 0;*/
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    height: 50px;
+    padding: 0% 2%;
+    background-color: #9FC8D9;
+    border-top: 1px solid #094660;
+    border-bottom: 1px solid #094660;
+}
+
+/* formato flex al contenedor hijo del nav*/
+#menuprincipal>div {
+    flex: 1;
+    max-width: 700px;
+    /*960px - lo cambie para centrarlo porque no encuentro otra forma*/
+    padding-left: 260px;
+
+}
+
+/* le da formato inline block a la lista */
+#menuprincipal li {
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+
+/* aplicamos la pseudo hover cuando se pasa por encima del menu y cambia el color*/
+#menuprincipal li:hover {
+    background-color: #6FACC6;
+}
+
+/*formato para los <a> del menu*/
+#menuprincipal a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+
+
+/* Formato a las li del menu princial les da formato relativo y las convierte en bloque inline*/
+#listamenu>li {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+
+/*"Esconde" el menu desplegable*/
+#listamenu li>ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background-color: #9FC8D9;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 0px 0px 5px 5px;
+    list-style: none;
+    z-index: 1000;
+}
+
+/*estable las medidas del la lista del segundo ul anidado*/
+#listamenu li>ul>li {
+    width: 250px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+/* el hover cuando pasas el mouse cambia la opcion de display y hace visible el menu desplegable*/
+#listamenu li:hover ul {
+    display: block;
+}
+
+/* formato a las <a> de las lista desordenadas*/
+#listamenu a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+
+/*formato para el contenerdor padre de la seccion principal - formato de flex centrado y un background de fondo*/
+#mainindex {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    background-image: url("../img/marble_white.jpg");
+}
+
+/*formato del contenedor hijo donde de pondran las secciones de la pagina principal*/
+#mainindex div {
+    display: flex;
+    flex: 1;
+    max-width: 960px;
+}
+
+/*formato del contenedor nieto ja donde se pondran los articulos*/
+#articulosprincipales {
+    flex: 1;
+    margin-right: 0px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+article {
+    position: relative;
+    padding: 0px 40px 20px 40px;
+}
+
+/*Formato del h1 dentro de los articulos*/
+article h1 {
+    margin-bottom: 5px;
+    font: bold 30px arial;
+    text-align: center;
+}
+
+/*Formato del p dentro de los articulos*/
+article p {
+    font: 18px Georgia, sans-serif;
+    text-align: justify;
+}
+
+article ul {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 90%;
+    padding: 2% 5%;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: left;
+}
+
+article>ul>li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    padding-left: 25px;
+}
+
+article>ul>img {
+    display: inline-table;
+    position: absolute;
+}
+
+
+/*formato para la seccion figure donde estan las imagenes*/
+figure {
+    margin: 10px 0px;
+}
+
+/*formato de las imagenes*/
+#articulosprincipales figure img {
+    max-width: 98%;
+    display: block;
+    padding: 1%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#reproductor {
+    display: flex;
+    justify-content: center;
+}
+
+
+#contenedorfooter ul {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    height: 90px;
+    width: 94%;
+    padding-left: 1%;
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+    text-align: left;
+    font-family: Martin;
+    font-size: 14px;
+}
+
+footer {
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer div a {
+    position: absolute;
+    margin-top: 0;
+    justify-content: left;
+
+}
+
+.mainmapa {
+    display: block;
+    position: relative;
+    width: 82%;
+    background-image: url("../img/marble_white.jpg");
+    padding-top: 2%;
+    padding-left: 16%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    justify-content: center;
+}
+
+.mainmapa div {
+    border: 2px red solid;
+    display: inline-block;
+
+    width: 80%;
+    padding: 1%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+
+.titulomapa>p {
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*.mapa{
+    width: 96%;
+    padding: 10px 2%;
+    display: inline-block;
+    position: relative;
+    }*/
+
+.descripcionmapa {
+    width: 96%;
+    padding: 10px 2%;
+    display: inline-block;
+    position: relative;
+}
+
+.descripcionmapa>p {
+    text-align: justify;
+    font-size: 1em;
+    font-family: Martin2;
+
+}
+
+.mainpagos {
+    width: 100%;
+    height: 500px;
+    background-image: url("/img/marble_white.jpg");
+    padding-top: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 2%;
+
+}
+
+.divpagos {
+    position: relative;
+    height: 50px;
+    left: 10%;
+    width: 82%;
+    background-color: white;
+    border: 1px solid black;
+      }
+
+.divpagos>p {
+    padding-top: 15px;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
