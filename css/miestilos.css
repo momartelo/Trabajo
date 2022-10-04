@@ -54,6 +54,8 @@ figcaption {
 
 #menuprincipal {
     display: flex;
+    position: sticky;
+    top: 0px;
     /*justify-content: center;*/
     width: 96%;
     /*height: 50px;*/
@@ -156,7 +158,7 @@ figcaption {
 }
 
 .articulomain {
-    position: relative;
+    /* position: relative; */
     padding: 0px 40px 20px 40px;
 }
 
@@ -177,8 +179,8 @@ figcaption {
     position: relative;
     display: inline-block;
     list-style: none;
-    width: 90%;
-    padding: 2% 5%;
+    width: 92%;
+    padding: 4% 4%;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
