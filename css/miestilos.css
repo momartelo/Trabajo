@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-   
+
 }
 
-::selection{
-    background-color:#7abcd8 ;
+::selection {
+    background-color: #7abcd8;
     color: white;
 }
 
@@ -84,12 +84,13 @@ figcaption {
 }
 
 
-#listamenu{
+#listamenu {
     display: flex;
     justify-content: space-around;
     text-align: center;
 
-    }
+}
+
 /* Formato a las li del menu princial les da formato relativo y las convierte en bloque inline*/
 #listamenu>li {
     position: relative;
@@ -146,7 +147,16 @@ figcaption {
 #mainindex div {
     display: flex;
     flex: 1;
-    max-width: 960px;
+    max-width: 96%;
+    padding: 0%;
+}
+
+#mainindex h1{
+    margin-bottom: 5px;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Martin';
+    text-decoration: underline;
 }
 
 /*formato del contenedor nieto ja donde se pondran los articulos*/
@@ -157,47 +167,173 @@ figcaption {
     border-radius: 10px;
 }
 
-.articulomain {
-    /* position: relative; */
-    padding: 0px 40px 20px 40px;
+.articulo1main{
+    display: grid;
+    width: 60%;
+    padding: 2%;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    grid-template-areas: "a b c d"
+                         "e f g h"
+                         "i j k l"
+                         ;
+
+    grid-template-columns: 35px 1fr 35px 1fr;
+    grid-template-rows: repeat(3, 50px);
+    /* border: 1px solid black; */
+    row-gap: 2%;
+    column-gap: 1%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: max-content;
+    align-items: center;
+}
+
+#icono1 {
+    grid-area: a;
+      }
+
+   #icono2 {
+       grid-area: c;
+      } 
+
+   #icono3 {
+    grid-area: e;
+   } 
+
+   #icono4 {
+    grid-area: g;
+   } 
+
+   #icono5 {
+    grid-area: i;
+   } 
+
+  #icono6 {
+    grid-area: k;
+   } 
+
+#texto1 {
+    grid-area: b;
+    justify-content:left ;
+    font-family: 'Martin';
+    font-size: 1.5em;
+   }
+ 
+   #texto2 {
+    grid-area: d;
+    justify-content:left ;
+    font-family: 'Martin';
+    font-size: 1.5em;
+   }
+
+   #texto3 {
+    grid-area: f;
+    justify-content:left ;
+    font-family: 'Martin';
+    font-size: 1.5em;
+   }
+
+   #texto4 {
+    grid-area: h;
+    justify-content:left ;
+    font-family: 'Martin';
+    font-size: 1.5em;
+   }
+
+   #texto5 {
+    grid-area: j;
+    justify-content:left ;
+    font-family: 'Martin';
+    font-size: 1.5em;
+   }
+
+   #texto6 {
+    grid-area: l;
+    justify-content:left ;
+    font-family: 'Martin';
+    font-size: 1.5em;
+   }
+
+/* .articulomain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2%;
+  
+} */
+
+
+/*Formato del p dentro de los articulos*/
+.articulomain p {
+    font-size: 1.25em;
+    text-align: justify;
+    font-family: 'Martin';
+    padding: 0% 2%;
+}
+
+/* .articulomain ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+ 
+    justify-content: space-evenly;
+    float:inline-start;
+    align-items: center;
+} */
+
+/* .articulomain>ul>li {
+    font-family: 'Martin';
+    font-size: 30px;
+    float: left;
+   
+
+} */
+
+.articulo1main>img{
+    height: 35px;
+    width: 35px;
+}
+
+.articulo2main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0% 2% 2% 2%;
+  
 }
 
 /*Formato del h1 dentro de los articulos*/
-.articulomain h1 {
+.articulo2main h1 {
     margin-bottom: 5px;
     font: bold 30px arial;
     text-align: center;
 }
 
 /*Formato del p dentro de los articulos*/
-.articulomain p {
-    font: 18px Georgia, sans-serif;
-    text-align: justify;
-}
-
-.articulomain ul {
-    position: relative;
-    display: inline-block;
-    list-style: none;
-    width: 92%;
-    padding: 4% 4%;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    text-align: left;
-}
-
-.articulomain>ul>li {
-    font-family: Arial, Helvetica, sans-serif;
+.articulo2main>p {
     font-size: 1.25em;
-    padding-left: 25px;
+    text-align: justify;
+    font-family: 'Martin';
+    padding: 2% 2% 0% 2%;
 }
 
-.articulomain>ul>img {
-    display: inline-table;
-    position: absolute;
+/*Formato del p dentro de los articulos*/
+.articulo2main>p>a {
+    font-size: 1em;
+    font-family: 'Martin';
+   }
+
+   .articulo2main>p>a:visited {
+    color: blue;
 }
 
+.articulo2main>p>a:link {
+    color: blue;
+}
 
 /*formato para la seccion figure donde estan las imagenes*/
 figure {
@@ -234,14 +370,14 @@ figure {
     font-size: 14px;
 }*/
 
-#footer{
+#footer {
     width: 100%;
     background-image: url(../img/marble_white.jpg);
     padding-bottom: 5px;
-    
-    }
 
-#articulofooter{
+}
+
+#articulofooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -308,22 +444,26 @@ figure {
 
 }
 
-.itemfooter2 p,a {
+.itemfooter2 p,
+a {
     font-family: 'Martin';
     font-size: 14px;
 }
 
-.itemfooter1 p,a {
+.itemfooter1 p,
+a {
     font-family: 'Martin';
     font-size: 14px;
 }
 
-.itemfooter3 p,a {
+.itemfooter3 p,
+a {
     font-family: 'Martin';
     font-size: 14px;
 }
 
-.itemfooter4 p,a {
+.itemfooter4 p,
+a {
     font-family: 'Martin';
     font-size: 14px;
 }
@@ -392,6 +532,20 @@ footer div a:visited {
 
 }
 
+.maincontacto {
+    display: flex;
+    width: 96%;
+    background-image: url("../img/marble_white.jpg");
+    padding: 2%;
+    border: 1px black solid;
+    }
+.titulocontacto{
+    text-align: center;
+    padding: 2%;
+    font-family: 'Martin';
+    border: 1px black solid;
+    width: 96%;
+}
 
 
 /* Prueba transform
