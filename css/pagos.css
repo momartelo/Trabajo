@@ -27,9 +27,10 @@ body {
     display: flex;
     justify-content: center;
     height: 160px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     width: 96%;
     padding: 0% 2%;
+    background-image: url(/img/Fondoheader2.jpg);
 }
 
 #contenedorheader div {
@@ -44,21 +45,27 @@ body {
     display: block;
     border-style: none;
     justify-content: center;
-    margin-top: 10px;
+   
 
 }
 
 figcaption {
     height: 30px;
     text-align: center;
-    font: bold;
+    color: white;
     font-size: 24px;
-    font-family: Martin2;
+    font-family: 'Arial Narrow';
+    font-weight: bolder;
 
 }
 
+/*formato para la seccion figure donde estan las imagenes*/
+figure {
+    margin: 10px 0px;
+}
+
 #menuprincipal {
-    display:flex;
+    display: flex;
     position: sticky;
     top: 0px;
     /*justify-content: center;*/
@@ -66,8 +73,8 @@ figcaption {
     /*height: 50px;*/
     padding: 0% 2%;
     background-color: #9FC8D9;
-    border-top: 1px solid #094660;
-    border-bottom: 1px solid #094660;
+    /* border-top: 1px solid #094660; */
+    /* border-bottom: 1px solid #094660; */
 }
 
 /* formato flex al contenedor hijo del nav*/
@@ -83,9 +90,11 @@ figcaption {
 
 /*formato para los <a> del menu*/
 #menuprincipal a {
-    font: bold 18px Arial, sans-serif;
     color: #333333;
     text-decoration: none;
+    font-family: 'Arial Narrow';
+    font-size: 24px;
+    font-weight: bold;
 }
 
 
@@ -134,9 +143,10 @@ figcaption {
 
 /* formato a las <a> de las lista desordenadas*/
 #listamenu a {
-    font: bold 18px Arial, sans-serif;
     color: #333333;
     text-decoration: none;
+    font-family: 'Arial Narrow';
+    font-size: 24px;
 }
 
 .contenedorpagos {
@@ -295,6 +305,10 @@ figcaption {
     margin-right: 3%;
     margin-bottom: 1%;
     background-image: url(../img/Imagen\ Cow1.jpg);
+    background-repeat: no-repeat;
+    background-size:  auto;
+    background-position: center;
+
 }
 
 /* div>img{
@@ -329,7 +343,7 @@ padding-top: 1%;
     margin-bottom: 1%;
     border-radius: 10px;
     padding-top: 1%;
-    /* border: 1px black solid; */
+    border: 1px black solid;
 
 }
 
@@ -387,26 +401,26 @@ padding-top: 1%;
 
 .itemfooter2 p,
 a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
 }
 
 .itemfooter1 p,
 a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
 }
 
 .itemfooter3 p,
 a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
 }
 
 .itemfooter4 p,
 a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
 }
 
 

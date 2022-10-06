@@ -23,10 +23,10 @@
     display: flex;
     justify-content: center;
     height: 160px;
-    /*background-color: cadetblue;*/
-    background-image: url(../img/hand-painted-watercolor-background-with-sky-and-clouds-shape.jpg);
+    /* background-color: cadetblue; */
     width: 96%;
     padding: 0% 2%;
+    background-image: url(/img/Fondoheader2.jpg);
 }
 
 #contenedorheader div {
@@ -41,17 +41,23 @@
     display: block;
     border-style: none;
     justify-content: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 
 }
 
 figcaption {
     height: 30px;
     text-align: center;
-    font: bold;
+    color: white;
     font-size: 24px;
-    font-family: Martin2;
+    font-family: 'Arial Narrow';
+    font-weight: bolder;
 
+}
+
+/*formato para la seccion figure donde estan las imagenes*/
+figure {
+    margin: 10px 0px;
 }
 
 #menuprincipal {
@@ -63,8 +69,8 @@ figcaption {
     /*height: 50px;*/
     padding: 0% 2%;
     background-color: #9FC8D9;
-    border-top: 1px solid #094660;
-    border-bottom: 1px solid #094660;
+    /* border-top: 1px solid #094660; */
+    /* border-bottom: 1px solid #094660; */
 }
 
 /* formato flex al contenedor hijo del nav*/
@@ -80,9 +86,11 @@ figcaption {
 
 /*formato para los <a> del menu*/
 #menuprincipal a {
-    font: bold 18px Arial, sans-serif;
     color: #333333;
     text-decoration: none;
+    font-family: 'Arial Narrow';
+    font-size: 24px;
+    font-weight: bold;
 }
 
 #listamenu{
@@ -131,9 +139,10 @@ figcaption {
 
 /* formato a las <a> de las lista desordenadas*/
 #listamenu a {
-    font: bold 18px Arial, sans-serif;
     color: #333333;
     text-decoration: none;
+    font-family: 'Arial Narrow';
+    font-size: 24px;
 }
 
 #contenedortarifas {
@@ -571,23 +580,23 @@ padding-bottom: 5px;
 }
 
 .itemfooter2 p,a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
 }
 
 .itemfooter1 p,a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
 }
 
 .itemfooter3 p,a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
 }
 
 .itemfooter4 p,a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
 }
 
 

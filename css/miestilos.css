@@ -23,9 +23,10 @@
     display: flex;
     justify-content: center;
     height: 160px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     width: 96%;
     padding: 0% 2%;
+    background-image: url(/img/Fondoheader2.jpg);
 }
 
 #contenedorheader div {
@@ -46,9 +47,10 @@
 figcaption {
     height: 30px;
     text-align: center;
-    font: bold;
+    color: white;
     font-size: 24px;
-    font-family: Martin2;
+    font-family: 'Arial Narrow';
+    font-weight: bolder;
 
 }
 
@@ -58,11 +60,11 @@ figcaption {
     top: 0px;
     /*justify-content: center;*/
     width: 96%;
-    /*height: 50px;*/
+    height: 60px;
     padding: 0% 2%;
     background-color: #9FC8D9;
-    border-top: 1px solid #094660;
-    border-bottom: 1px solid #094660;
+    /* border-top: 1px solid #094660; */
+    /* border-bottom: 1px solid #094660; */
 }
 
 /* formato flex al contenedor hijo del nav*/
@@ -73,14 +75,16 @@ figcaption {
 
 /* aplicamos la pseudo hover cuando se pasa por encima del menu y cambia el color*/
 #menuprincipal li:hover {
-    background-color: #6FACC6;
+    background-color:#6FACC6;
 }
 
 /*formato para los <a> del menu*/
 #menuprincipal a {
-    font: bold 18px Arial, sans-serif;
     color: #333333;
     text-decoration: none;
+    font-family: 'Arial Narrow';
+    font-size: 24px;
+    font-weight: bold;
 }
 
 
@@ -95,7 +99,7 @@ figcaption {
 #listamenu>li {
     position: relative;
     display: inline-block;
-    height: 35px;
+    height: 45px;
     padding: 15px 10px 0px 10px;
     margin-right: 5px;
 }
@@ -104,7 +108,7 @@ figcaption {
 #listamenu li>ul {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0px;
     background-color: #9FC8D9;
     box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
@@ -129,9 +133,11 @@ figcaption {
 
 /* formato a las <a> de las lista desordenadas*/
 #listamenu a {
-    font: bold 18px Arial, sans-serif;
     color: #333333;
     text-decoration: none;
+    font-family: 'Arial Narrow';
+    font-size: 24px;
+    
 }
 
 /*formato para el contenerdor padre de la seccion principal - formato de flex centrado y un background de fondo*/
@@ -155,7 +161,7 @@ figcaption {
     margin-bottom: 5px;
     font-size: 2em;
     text-align: center;
-    font-family: 'Martin';
+    font-family: 'Arial Narrow';
     text-decoration: underline;
 }
 
@@ -218,42 +224,42 @@ figcaption {
 #texto1 {
     grid-area: b;
     justify-content:left ;
-    font-family: 'Martin';
+    font-family: 'Arial Narrow';
     font-size: 1.5em;
    }
  
    #texto2 {
     grid-area: d;
     justify-content:left ;
-    font-family: 'Martin';
+    font-family: 'Arial Narrow';
     font-size: 1.5em;
    }
 
    #texto3 {
     grid-area: f;
     justify-content:left ;
-    font-family: 'Martin';
+    font-family: 'Arial Narrow';
     font-size: 1.5em;
    }
 
    #texto4 {
     grid-area: h;
     justify-content:left ;
-    font-family: 'Martin';
+    font-family: 'Arial Narrow';
     font-size: 1.5em;
    }
 
    #texto5 {
     grid-area: j;
     justify-content:left ;
-    font-family: 'Martin';
+    font-family: 'Arial Narrow';
     font-size: 1.5em;
    }
 
    #texto6 {
     grid-area: l;
     justify-content:left ;
-    font-family: 'Martin';
+    font-family: 'Arial Narrow';
     font-size: 1.5em;
    }
 
@@ -270,8 +276,8 @@ figcaption {
 .articulomain p {
     font-size: 1.25em;
     text-align: justify;
-    font-family: 'Martin';
-    padding: 0% 2%;
+    font-family: 'Arial Narrow';
+     padding: 0% 2%;
 }
 
 /* .articulomain ul {
@@ -317,14 +323,14 @@ figcaption {
 .articulo2main>p {
     font-size: 1.25em;
     text-align: justify;
-    font-family: 'Martin';
+    font-family: 'Arial Narrow';
     padding: 2% 2% 0% 2%;
 }
 
 /*Formato del p dentro de los articulos*/
 .articulo2main>p>a {
     font-size: 1em;
-    font-family: 'Martin';
+    font-family: 'Arial Narrow';
    }
 
    .articulo2main>p>a:visited {
@@ -446,26 +452,28 @@ figure {
 
 .itemfooter2 p,
 a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
+ 
 }
 
 .itemfooter1 p,
 a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
+  
 }
 
 .itemfooter3 p,
 a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
 }
 
 .itemfooter4 p,
 a {
-    font-family: 'Martin';
-    font-size: 14px;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
 }
 
 
@@ -508,7 +516,7 @@ footer div a:visited {
 .titulomapa>p {
     text-align: center;
     font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial Narrow';
 }
 
 /*.mapa{
@@ -542,7 +550,7 @@ footer div a:visited {
 .titulocontacto{
     text-align: center;
     padding: 2%;
-    font-family: 'Martin';
+    font-family: 'Arial Narrow';
     border: 1px black solid;
     width: 96%;
 }
