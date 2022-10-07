@@ -26,17 +26,15 @@
     /* background-color: cadetblue; */
     width: 96%;
     padding: 0% 2%;
-    background-image: url(/img/Fondoheader2.jpg);
+    background-image: url(../img/Fondoheader2.jpg);
 }
 
-#contenedorheader div {
-    flex: 1;
-    padding-top: 0;
-    width: 96%;
-    margin: 0 auto;
+#logoprincipal{
+    padding-left: 18%;
 }
 
-#contenedorheader div img {
+
+#logoprincipal img {
     margin: auto;
     display: block;
     border-style: none;
@@ -52,6 +50,18 @@ figcaption {
     font-family: 'Arial Narrow';
     font-weight: bolder;
 
+}
+
+#logosredes{
+padding-top: 1%;
+padding-left: 10%;
+flex-direction: row;
+display: flex;
+
+}
+#logosredes>a{
+margin-left: 1%;
+ 
 }
 
 #menuprincipal {
@@ -299,6 +309,12 @@ figcaption {
 
 } */
 
+.articulomain img{
+    /* height: 35px; */
+    width: 60%;
+}
+
+
 .articulo1main>img{
     height: 35px;
     width: 35px;
@@ -351,7 +367,7 @@ figure {
     max-width: 98%;
     display: block;
     padding: 1%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
 }
 

@@ -26,22 +26,18 @@
     /* background-color: cadetblue; */
     width: 96%;
     padding: 0% 2%;
-    background-image: url(/img/Fondoheader2.jpg);
+    background-image: url(../img/Fondoheader2.jpg);
 }
 
-#contenedorheader div {
-    flex: 1;
-    padding-top: 0;
-    width: 96%;
-    margin: 0 auto;
+#logoprincipal{
+    padding-left: 18%;
 }
 
-#contenedorheader div img {
+#logoprincipal img {
     margin: auto;
     display: block;
     border-style: none;
     justify-content: center;
-    /* margin-top: 10px; */
 
 }
 
@@ -54,6 +50,18 @@ figcaption {
     font-weight: bolder;
 
 }
+
+#logosredes{
+    padding-top: 1%;
+    padding-left: 10%;
+    flex-direction: row;
+    display: flex;
+    
+    }
+    #logosredes>a{
+    margin-left: 1%;
+     
+    }
 
 /*formato para la seccion figure donde estan las imagenes*/
 figure {
@@ -160,7 +168,7 @@ figure {
     width: auto;
     justify-content: center;
     padding: 1%;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     background-color: white;
     border-radius: 10px;
     
@@ -176,7 +184,7 @@ figure {
 #dibujodescripciontarifas {
     display: flex;
     width: 10%;
-    height: 10%;
+    height: 45px;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-right: 3%;
@@ -192,7 +200,7 @@ figure {
 #descripciontarifas {
     display: flex;
     width: 80%;
-    height: 10%;
+    height: 45px;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-right: 0%;
@@ -205,8 +213,9 @@ figure {
 }
 
 #descripciontarifas>p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial Narrow';
     font-size: 1.25em;
+    
 }
 
 #contenedortarifasflex {
@@ -229,8 +238,8 @@ figure {
 }
 
 #titulotarifasflex>p {
-    font-family: 'Martin';
-    font-size: 2em;
+    font-family: 'Arial Narrow';
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -247,6 +256,7 @@ figure {
     box-shadow: gray 5px 5px 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 #tarifaflex2 {
     display: flex;
@@ -313,14 +323,14 @@ figure {
     }
 
 #descripciontarifaflex p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial Narrow';
     font-size: 1.1em;
     text-align: justify;
 }
 
 .tituloincluye{
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial Narrow';
     font-size: 1.25em;
 }
 
@@ -351,14 +361,14 @@ content: "\027a0";
     }
 
 .incluyetarifaflex p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.75em;
+    font-family: 'Arial Narrow';
+    font-size: 0.85em;
    }
 
 .incluyetarifaflex h3{
-    font-family: 'Martin2';
+    font-family: 'Arial Narrow';
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .incluyetarifaflex h3::before{
@@ -386,8 +396,8 @@ content: "\027a0";
 }
 
 #titulotarifasfija>p {
-    font-family: 'Martin';
-    font-size: 2em;
+    font-family: 'Arial Narrow';
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -472,7 +482,7 @@ content: "\027a0";
 }
 
 #descripciontarifafija p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial Narrow';
     font-size: 1.1em;
     text-align: justify;
 }
@@ -490,15 +500,15 @@ content: "\027a0";
 }
 
 .incluyetarifafija p{
-    font-family: 'Martin';
-    font-size: 0.75em;
+    font-family: 'Arial Narrow';
+    font-size: 0.85em;
     
 }
 
 .incluyetarifafija h3{
-    font-family: 'Martin2';
+    font-family: 'Arial Narrow';
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .incluyetarifafija h3::before{

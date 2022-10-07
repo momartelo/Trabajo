@@ -30,24 +30,28 @@ body {
     /* background-color: cadetblue; */
     width: 96%;
     padding: 0% 2%;
-    background-image: url(/img/Fondoheader2.jpg);
+    background-image: url(../img/Fondoheader2.jpg);
 }
 
-#contenedorheader div {
+#logoprincipal {
+    padding-left: 18%;
+}
+
+/* #contenedorheader div {
     flex: 1;
     padding-top: 0;
     width: 96%;
     margin: 0 auto;
-}
+} */
 
-#contenedorheader div img {
+#logoprincipal img {
     margin: auto;
     display: block;
     border-style: none;
     justify-content: center;
-   
 
 }
+
 
 figcaption {
     height: 30px;
@@ -62,6 +66,19 @@ figcaption {
 /*formato para la seccion figure donde estan las imagenes*/
 figure {
     margin: 10px 0px;
+}
+
+#logosredes {
+    padding-top: 1%;
+    padding-left: 10%;
+    flex-direction: row;
+    display: flex;
+
+}
+
+#logosredes>a {
+    margin-left: 1%;
+
 }
 
 #menuprincipal {
@@ -180,7 +197,7 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
-   }
+}
 
 .secciontitulo>h1 {
     width: 96%;
@@ -297,7 +314,7 @@ figure {
 
 .imagenabajo {
     display: flex;
-    height:200px;
+    height: 200px;
     width: 94%;
     border-radius: 10px;
     /* border: 1px black solid; */
@@ -306,7 +323,7 @@ figure {
     margin-bottom: 1%;
     background-image: url(../img/Imagen\ Cow1.jpg);
     background-repeat: no-repeat;
-    background-size:  auto;
+    background-size: auto;
     background-position: center;
 
 }
