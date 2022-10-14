@@ -43,10 +43,63 @@
         </div>
     </nav>
 <main class="maincontacto">
-    <div class="titulocontacto">
+    <div class="formulario">
+    <div class="titulo1contacto">
         <h1>Formulario de Contacto</h1>
     </div>
+        <div class="titulo2contacto">
+        <h3>Escribe tus consultas, opiniones o reclamos, nos estaremos contactando a la brevedad</h3>
+    </div>
+    <form action="" method="dialog">
+        <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+                <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                placeholder="Escribe tu nombre">
+        </p>
+        <p>
+            <label for="email" class="colocar_email">Email
+                <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio"
+                placeholder="Escribe tu Email">
+        </p>
+        <p>
+            <label for="telefono" class="colocar_telefono">Teléfono
+            </label>
+            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+        </p>
+        <p>
+            <label for="asunto" class="colocar_asunto">Asunto
+                <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                placeholder="Escribe un asunto">
+        </p>
+        <p>
+            <label for="mensaje" class="colocar_mensaje">Mensaje
+                <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                placeholder="Deja aquí tu comentario..."></textarea>
+        </p>
 
+        <button type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+        </button>
+
+        <p class="aviso">
+            <span class="obligatorio"> * &nbsp </span> los campos son obligatorios.
+        </p>
+
+
+</form>
+
+</div>
+<div class="imagencontacto">
+    <img src="/img/224z_2201_w023_n001_1704b_p1_1704.jpg" alt="" >
+</div>
 </main>
 
     <footer id="footer">

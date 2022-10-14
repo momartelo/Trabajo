@@ -558,18 +558,111 @@ footer div a:visited {
 
 .maincontacto {
     display: flex;
-    width: 96%;
+    flex-direction: column;
+    align-items: center;
+     width: 96%;
     background-image: url("../img/marble_white.jpg");
     padding: 2%;
-    border: 1px black solid;
+    justify-content: center;
     }
-.titulocontacto{
-    text-align: center;
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        border: 1px black solid;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+    background-color: papayawhip;
+    }
+
+.titulo1contacto, .titulo2contacto{
+    display: flex;
+    width: 80%;
     padding: 2%;
+    margin: 1%;
     font-family: 'Arial Narrow';
     border: 1px black solid;
-    width: 96%;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    height: fit-content;
 }
+
+form{
+    width: 85%;
+    
+}
+
+form p{
+    display: flex;
+    flex-direction: column;
+}
+
+form p label{
+display: flex;
+justify-content: flex-start;
+/* border: 1px black solid; */
+margin-top: 5px;
+margin-left: 5px;
+padding-left: 1%;
+font-family: 'Arial Narrow';
+
+}
+
+form p input{
+    display: flex;
+    border: 1px black solid;
+    margin: 5px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 1%;
+}
+
+form p textarea{
+    display: flex;
+    border: 1px black solid;
+    margin: 5px;
+    height: 100px;
+    border-radius: 10px;
+    padding-left: 1%;
+    font-family: 'Arial';
+    padding-top: 1%;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 2%;
+    border-radius: 5px;
+    border: 1px black solid;
+    font-weight: bold;
+}
+
+.aviso{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Arial Narrow';
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.imagencontacto {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 2%;
+    
+}
+
+
+
 
 
 /* Prueba transform

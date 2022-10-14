@@ -87,7 +87,7 @@ figure {
     top: 0px;
     /*justify-content: center;*/
     width: 96%;
-    /*height: 50px;*/
+    height: 60px;
     padding: 0% 2%;
     background-color: #9FC8D9;
     /* border-top: 1px solid #094660; */
@@ -126,7 +126,7 @@ figure {
 #listamenu>li {
     position: relative;
     display: inline-block;
-    height: 35px;
+    height: 45px;
     padding: 15px 10px 0px 10px;
     margin-right: 5px;
 }
@@ -135,7 +135,7 @@ figure {
 #listamenu li>ul {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0px;
     background-color: #9FC8D9;
     box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
