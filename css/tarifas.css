@@ -22,7 +22,7 @@
 #contenedorheader {
     display: flex;
     justify-content: center;
-    height: 160px;
+    height: auto;
     /* background-color: cadetblue; */
     width: 96%;
     padding: 0% 2%;
@@ -30,7 +30,7 @@
 }
 
 #logoprincipal{
-    padding-left: 30%;
+    padding-left: 25%;
 }
 
 #logoprincipal img {
@@ -42,12 +42,12 @@
 }
 
 figcaption {
-    height: 30px;
     text-align: center;
     color: white;
-    font-size: 24px;
-    font-family: 'Arial Narrow';
+    font-size: 1.5em;
+    font-family: 'Roboto';
     font-weight: bolder;
+  
 
 }
 
