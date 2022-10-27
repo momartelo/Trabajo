@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 ::selection {
@@ -160,7 +159,7 @@ figcaption {
     justify-content: center;
     width: 96%;
     padding: 2%;
-    background-image: url("../img/marble_white.jpg");
+    background-image: url("../img/gray-concrete-wall.jpg");
 }
 
 /*formato del contenedor hijo donde de pondran las secciones de la pagina principal*/
@@ -396,9 +395,53 @@ figure {
     font-size: 14px;
 }*/
 
+#contenedorcow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    align-items: center;
+    background-image: url("../img/gray-concrete-wall.jpg");
+}
+
+#titulocow{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+
+}
+
+#titulocow>p{
+    font-family: 'Arial Narrow';
+    font-size: 3em;
+    font-weight: bold;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 1%;
+   width: 96%;
+   text-align: center;
+   text-decoration: underline;
+}
+
+#articulocow{
+    width: 86%;
+    /* border: 1px black solid; */
+    border-radius: 10px;
+    margin: 1%;
+    padding-top: 2%;
+}
+
+#articulocow>p{
+    font-family: 'Arial Narrow';
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+
 #footer {
     width: 100%;
-    background-image: url(../img/marble_white.jpg);
+    background-image: url(../img/gray-concrete-wall.jpg);
     padding-bottom: 5px;
 
 }
@@ -667,6 +710,7 @@ button {
 }
 
 
+
 @media screen and (max-width: 860px) and (min-width: 400px) {
 
     figcaption {
@@ -913,6 +957,48 @@ button {
 
 
 }
+
+
+
+.slider-frame {
+	width: 1280px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
 
 
 /* Prueba transform

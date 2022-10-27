@@ -160,7 +160,7 @@ figure {
     /*flex-direction: column;*/
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(../img/marble_white.jpg);
+    background-image: url(../img/gray-concrete-wall.jpg);
 }
 
 #cajaimagen {
@@ -517,7 +517,7 @@ content: "\027a0";
 
 #footer{
 width: 100%;
-background-image: url(../img/marble_white.jpg);
+background-image: url(../img/gray-concrete-wall.jpg);
 padding-bottom: 5px;
 
 }
