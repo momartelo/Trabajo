@@ -97,7 +97,7 @@ figcaption {
     text-decoration: none;
     font-family: 'Arial Narrow';
     font-size: 24px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 
@@ -438,6 +438,140 @@ figure {
     text-align: justify;
 }
 
+#contenedorsalareuniones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    align-items: center;
+    background-image: url("../img/gray-concrete-wall.jpg");
+}
+
+#titulosalareuniones{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+
+}
+
+#titulosalareuniones>p{
+    font-family: 'Arial Narrow';
+    font-size: 3em;
+    font-weight: bold;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 1%;
+   width: 96%;
+   text-align: center;
+   text-decoration: underline;
+}
+
+#articulosalareuniones{
+    width: 86%;
+    /* border: 1px black solid; */
+    border-radius: 10px;
+    margin: 1%;
+    padding-top: 2%;
+}
+
+#articulosalareuniones>p{
+    font-family: 'Arial Narrow';
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+#articulosalareuniones>p>a{
+    font-family: 'Arial Narrow';
+    font-size: 1em;
+    text-align: justify;
+}
+#articulosalareuniones p a:link {
+        color: blue;
+    }
+    
+    #articulosalareuniones p a:hover {
+        background-color: lightblue;
+    }
+    
+    #articulosalareuniones p a:visited {
+        color: blue;
+    }
+
+
+#imagensalareuniones{
+    display: flex;
+    padding-top: 2%;
+    justify-content: center;
+}
+
+#contenedorsalacapacitacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    align-items: center;
+    background-image: url("../img/gray-concrete-wall.jpg");
+}
+
+#titulosalacapacitacion{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+
+}
+
+#titulosalacapacitacion>p{
+    font-family: 'Arial Narrow';
+    font-size: 3em;
+    font-weight: bold;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 1%;
+   width: 96%;
+   text-align: center;
+   text-decoration: underline;
+}
+
+#articulosalacapacitacion{
+    width: 86%;
+    /* border: 1px black solid; */
+    border-radius: 10px;
+    margin: 1%;
+    padding-top: 1%;
+}
+
+#articulosalacapacitacion>p{
+    font-family: 'Arial Narrow';
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+#articulosalacapacitacion>p>a{
+    font-family: 'Arial Narrow';
+    font-size: 1em;
+    text-align: justify;
+}
+#articulosalacapacitacion p a:link {
+        color: blue;
+    }
+    
+    #articulosalacapacitacion p a:hover {
+        background-color: lightblue;
+    }
+    
+    #articulosalacapacitacion p a:visited {
+        color: blue;
+    }
+
+
+#imagensalacapacitacion{
+    display: flex;
+    padding-top: 2%;
+    justify-content: center;
+
+}
 
 #footer {
     width: 100%;
@@ -553,32 +687,37 @@ footer div a:visited {
 }
 
 .mainmapa {
-    display: block;
-    position: relative;
-    width: 82%;
-    background-image: url("../img/marble_white.jpg");
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    background-image: url("../img/gray-concrete-wall.jpg");
     padding-top: 2%;
-    padding-left: 16%;
+    /* padding-left: 16%; */
     padding-right: 2%;
+    padding-left: 2%;
     padding-bottom: 2%;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .mainmapa div {
-    border: 2px red solid;
-    display: inline-block;
-
-    width: 80%;
+    border: 1px  black solid;
+    display:flex;
+justify-content: center;
+    width: 70%;
     padding: 1%;
     background-color: #FFFFFF;
     border-radius: 10px;
 
 }
 
+iframe{
+    margin: auto;
+}
 
 .titulomapa>p {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.25em;
     font-family: 'Arial Narrow';
 }
 
@@ -589,17 +728,16 @@ footer div a:visited {
     position: relative;
     }*/
 
-.descripcionmapa {
+/* .descripcionmapa {
     width: 96%;
     padding: 10px 2%;
-    display: inline-block;
-    position: relative;
-}
+    display: flex;
+} */
 
 .descripcionmapa>p {
     text-align: justify;
-    font-size: 1em;
-    font-family: Martin2;
+    font-size: 1.2em;
+    font-family: 'Arial Narrow';
 
 }
 
@@ -618,6 +756,7 @@ footer div a:visited {
     flex-direction: column;
     width: 50%;
     border: 1px black solid;
+    padding: 1% 0%;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -627,8 +766,8 @@ footer div a:visited {
 .titulo1contacto,
 .titulo2contacto {
     display: flex;
-    width: 80%;
-    padding: 2%;
+    width: 90%;
+    padding: 1%;
     margin: 1%;
     font-family: 'Arial Narrow';
     border: 1px black solid;
@@ -639,8 +778,8 @@ footer div a:visited {
 }
 
 form {
-    width: 85%;
-
+    width: 94%;
+  
 }
 
 form p {
@@ -683,7 +822,7 @@ button {
     width: 100px;
     height: 30px;
     margin-left: 5px;
-    margin-top: 2%;
+    margin-top: 1%;
     border-radius: 5px;
     border: 1px black solid;
     font-weight: bold;
@@ -694,8 +833,8 @@ button {
     flex-direction: row;
     width: 100%;
     margin-left: 5px;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    /* margin-top: 2%; */
+    margin-bottom: 1%;
     font-family: 'Arial Narrow';
     font-weight: bold;
     font-size: 1em;
