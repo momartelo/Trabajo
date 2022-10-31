@@ -1,12 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-
+    
 }
 
 ::selection {
     background-color: #7abcd8;
     color: white;
+}
+
+body{
+    background-image: url(../img/gray-concrete-wall.jpg);
 }
 
 @font-face {
@@ -27,6 +31,7 @@
     width: 96%;
     padding: 0% 2%;
     background-image: url(../img/Fondoheader2.jpg);
+  
 }
 
 #logoprincipal{
@@ -160,7 +165,7 @@ figure {
     /*flex-direction: column;*/
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(../img/gray-concrete-wall.jpg);
+    /* background-image: url(../img/gray-concrete-wall.jpg); */
 }
 
 #cajaimagen {
@@ -194,28 +199,29 @@ figure {
     justify-content: center;
     align-content: center;
     border-radius: 10px;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 #descripciontarifas {
     display: flex;
     width: 80%;
-    height: 45px;
+    height:45px;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-right: 0%;
     padding: 1% 1%;
     background-color: white;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 
 }
 
 #descripciontarifas>p {
     font-family: 'Arial Narrow';
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 125%;
+    /* font-weight: bold; */
     
 }
 
@@ -227,7 +233,7 @@ figure {
     padding: 0% 2%;
     background-color:white;
     border-radius: 10px;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 #titulotarifasflex {
@@ -241,64 +247,23 @@ figure {
 #titulotarifasflex>p {
     font-family: 'Arial Narrow';
     font-size: 2.5em;
-    font-weight: bold;
+    /* font-weight: bold; */
+    text-decoration:underline;
 }
 
-#tarifaflex1 {
+.tarifaflex {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 16%;
+    height: max-content;
     margin: 0% 2% 1% 2%;
     padding: 1%;
     background-color:linen;
     align-items: center;
     border-radius: 5%;
     box-shadow: gray 5px 5px 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-#tarifaflex2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 16%;
-    margin: 0% 2% 1% 2%;
-    padding: 1%;
-    background-color:linen;
-    align-items: center;
-    border-radius: 5%;
-    box-shadow: gray 5px 5px 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#tarifaflex3 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 16%;
-    margin: 0% 2% 1% 2%;
-    padding: 1%;
-    background-color:linen;
-    align-items: center;
-    border-radius: 5%;
-    box-shadow: gray 5px 5px 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#tarifaflex4 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 16%;
-    margin: 0% 2% 1% 2%;
-    padding: 1%;
-    background-color:linen;
-    align-items: center;
-    border-radius: 5%;
-    box-shadow: gray 5px 5px 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Arial Narrow';
 }
 
 #contenedordescripciontarifaflex {
@@ -347,8 +312,6 @@ content: "\027a0";
     width: 96%;
     margin: 1% 1% 2%;
     }
-
-
 .incluyetarifaflex {
     display: flex;
     width: 15%;
@@ -376,6 +339,10 @@ content: "\027a0";
     content:"\02713"" ";
 }
 
+img{
+    margin: 2%;
+}
+
 #contenedortarifasfija {
     display: flex;
     flex-wrap: wrap;
@@ -383,9 +350,9 @@ content: "\027a0";
     width: 96%;
     padding: 0% 2%;
     background-color: white;
-    margin-top: 2%;
+    /* margin-top: 2%; */
     border-radius: 10px;
-    border: 1px black solid
+    /* border: 1px black solid */
 }
 
 #titulotarifasfija {
@@ -399,64 +366,23 @@ content: "\027a0";
 #titulotarifasfija>p {
     font-family: 'Arial Narrow';
     font-size: 2.5em;
-    font-weight: bold;
+    /* font-weight: bold; */
+    text-decoration: underline;
 }
 
-#tarifafija1 {
+.tarifafija {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 16%;
-    margin: 0% 2% 1% 2%;
-    padding: 1%;
-    background-color:linen;
-    align-items: center;
-    border-radius: 5%;
-    /*border-style:outset ;*/
-    box-shadow: gray 5px 5px 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#tarifafija2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 16%;
+    height: max-content;
     margin: 0% 2% 1% 2%;
     padding: 1%;
     background-color:linen;
     align-items: center;
     border-radius: 5%;
     box-shadow: gray 5px 5px 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#tarifafija3 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 16%;
-    margin: 0% 2% 1% 2%;
-    padding: 1%;
-    background-color:linen;
-    align-items: center;
-    border-radius: 5%;
-    box-shadow: gray 5px 5px 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#tarifafija4 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 16%;
-    margin: 0% 2% 1% 2%;
-    padding: 1%;
-    background-color:linen;
-    align-items: center;
-    border-radius: 5%;
-    box-shadow: gray 5px 5px 2px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Arial Narrow';
 }
 
 #contenedordescripciontarifafija {
@@ -466,9 +392,7 @@ content: "\027a0";
     width: 96%;
     background-color: white;
     align-content: center;
-    
-
-}
+  }
 
 #descripciontarifafija {
     display: flex;
@@ -518,7 +442,7 @@ content: "\027a0";
 
 #footer{
 width: 100%;
-background-image: url(../img/gray-concrete-wall.jpg);
+/* background-image: url(../img/gray-concrete-wall.jpg); */
 padding-bottom: 5px;
 
 }
@@ -534,7 +458,7 @@ padding-bottom: 5px;
     margin-bottom: 1%;
     border-radius: 10px;
     padding-top: 1%;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 
 }
 

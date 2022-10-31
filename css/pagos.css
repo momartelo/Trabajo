@@ -4,7 +4,7 @@
 
 }
 
-body {
+body{
     background-image: url(../img/gray-concrete-wall.jpg);
 }
 
@@ -343,7 +343,7 @@ padding-top: 1%;
 
 #footer {
     width: 100%;
-    background-image: url(../img/gray-concrete-wall.jpg);
+    /* background-image: url(../img/gray-concrete-wall.jpg); */
     padding-bottom: 5px;
 
 }
@@ -359,7 +359,7 @@ padding-top: 1%;
     margin-bottom: 1%;
     border-radius: 10px;
     padding-top: 1%;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 
 }
 

@@ -18,8 +18,9 @@
     src: url(../fonts/RobotoCondensed-Bold.ttf);
 }
 
-
-
+body{
+    background-image: url(../img/gray-concrete-wall.jpg);
+}
 
 #contenedorheader {
     display: flex;
@@ -159,7 +160,7 @@ figcaption {
     justify-content: center;
     width: 96%;
     padding: 2%;
-    background-image: url("../img/gray-concrete-wall.jpg");
+    /* background-image: url(../img/gray-concrete-wall.jpg); */
 }
 
 /*formato del contenedor hijo donde de pondran las secciones de la pagina principal*/
@@ -402,7 +403,7 @@ figure {
     width: 96%;
     padding: 2%;
     align-items: center;
-    background-image: url("../img/gray-concrete-wall.jpg");
+    /* background-image: url(../img/gray-concrete-wall.jpg); */
 }
 
 #titulocow{
@@ -414,7 +415,7 @@ figure {
 
 #titulocow>p{
     font-family: 'Arial Narrow';
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     border: 1px black solid;
     border-radius: 10px;
@@ -434,7 +435,7 @@ figure {
 
 #articulocow>p{
     font-family: 'Arial Narrow';
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: justify;
 }
 
@@ -445,7 +446,7 @@ figure {
     width: 96%;
     padding: 2%;
     align-items: center;
-    background-image: url("../img/gray-concrete-wall.jpg");
+    /* background-image: url(../img/gray-concrete-wall.jpg); */
 }
 
 #titulosalareuniones{
@@ -457,7 +458,7 @@ figure {
 
 #titulosalareuniones>p{
     font-family: 'Arial Narrow';
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     border: 1px black solid;
     border-radius: 10px;
@@ -477,7 +478,7 @@ figure {
 
 #articulosalareuniones>p{
     font-family: 'Arial Narrow';
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: justify;
 }
 
@@ -512,7 +513,7 @@ figure {
     width: 96%;
     padding: 2%;
     align-items: center;
-    background-image: url("../img/gray-concrete-wall.jpg");
+    /* background-image: url(../img/gray-concrete-wall.jpg); */
 }
 
 #titulosalacapacitacion{
@@ -524,7 +525,7 @@ figure {
 
 #titulosalacapacitacion>p{
     font-family: 'Arial Narrow';
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     border: 1px black solid;
     border-radius: 10px;
@@ -544,7 +545,7 @@ figure {
 
 #articulosalacapacitacion>p{
     font-family: 'Arial Narrow';
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: justify;
 }
 
@@ -575,7 +576,7 @@ figure {
 
 #footer {
     width: 100%;
-    background-image: url(../img/gray-concrete-wall.jpg);
+    /* background-image: url(../img/gray-concrete-wall.jpg); */
     padding-bottom: 5px;
 
 }
@@ -591,7 +592,7 @@ figure {
     margin-bottom: 1%;
     border-radius: 10px;
     padding-top: 1%;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 
 }
 
@@ -690,7 +691,7 @@ footer div a:visited {
     display: flex;
     flex-direction: column;
     width: 96%;
-    background-image: url("../img/gray-concrete-wall.jpg");
+    /* background-image: url(../img/gray-concrete-wall.jpg); */
     padding-top: 2%;
     /* padding-left: 16%; */
     padding-right: 2%;
@@ -701,7 +702,7 @@ footer div a:visited {
 }
 
 .mainmapa div {
-    border: 1px  black solid;
+    /* border: 1px  black solid; */
     display:flex;
 justify-content: center;
     width: 70%;
@@ -746,7 +747,7 @@ iframe{
     flex-direction: column;
     align-items: center;
     width: 96%;
-    background-image: url("../img/gray-concrete-wall.jpg");
+    /* background-image: url(../img/gray-concrete-wall.jpg); */
     padding: 2%;
     justify-content: center;
 }
